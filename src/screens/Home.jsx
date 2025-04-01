@@ -3,6 +3,10 @@ import Hero from '../components/Hero';
 import BentoGrid from '../components/OurSolutions';
 import Who from '../components/Who';
 import Carousel from '../components/Uncover.jsx';
+import AboutUs from './AboutUs.jsx';
+import CoreValues from '../components/values.jsx';
+import Testimonials from '../components/Clients.jsx';
+
 
 
 
@@ -30,8 +34,13 @@ const Home = () => {
 
             <div className="other-content">
                 <BentoGrid />
+                <AboutUs />
+                <CoreValues />
                 <Carousel />
+                <Testimonials />
                 <Who />
+
+
 
 
             </div>

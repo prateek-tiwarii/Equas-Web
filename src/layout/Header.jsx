@@ -22,12 +22,12 @@ const Header = () => {
     return (
         <header className={`sticky top-0 w-full  z-50 transition-colors duration-300 ${isScrolled ? "bg-white shadow " : "bg-transparent"}`}>
 
-            <nav className="max-w-6xl mx-auto flex justify-between items-center p-4">
+            <nav className="max-w-7xl mx-auto flex justify-between items-center p-4">
 
-                <div className="flex items-center gap-8">
+                <div className="flex items-center gap-8 ">
                     <h1 className="text-4xl font-bold text-[#0054FF]">Equas</h1>
 
-                    <ul className="hidden md:flex gap-6 text-gray-700 font-medium">
+                    <ul className="hidden md:flex gap-6 text-gray-700 font-semibold text-base">
                         <li><Link to="/" className="hover:text-blue-600">Home</Link></li>
                         <li><Link to="/about" className="hover:text-blue-600">About Us</Link></li>
                         <li><Link to="/contact" className="hover:text-blue-600">Contact Us</Link></li>
@@ -35,10 +35,10 @@ const Header = () => {
                 </div>
 
                 <div className="hidden md:flex items-center gap-6">
-                    <Link to="/login" className="hover:text-blue-600 text-gray-700 font-medium">Login</Link>
+                    <Link to="/login" className=" text-blue-600 font-semibold text-lg hover:bg-blue-200  p-3 rounded-xl">Login</Link>
                     <Link
                         to="/demo"
-                        className="border-2 border-[#003699] text-white bg-[#003699] px-4 py-2 rounded-lg hover:bg-white hover:text-[#003699] transition"
+                        className="px-4 py-2 text-white rounded-lg bg-[linear-gradient(76deg,_rgb(0,54,153),_rgb(0,84,255)_99%)]"
                     >
                         Book a Demo
                     </Link>
